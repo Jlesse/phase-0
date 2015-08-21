@@ -36,3 +36,30 @@ mkdir: makes a new directory with specified name
 
 ###Forking and Cloning Reflection
 
+create a new repo with Github:
+
+You may want to do this when starting a new project or collaborating on a new project. People can now push, pull, fork, etc. from the repo and Github well keep track of changes and preserve versions.
+
+1. go to your profile on github.com
+2. hit the plus button in the top right and select New Repository
+3. In the new repository page give the repo a name, pick whether you want it to be public or private, choose any files you want ignored with git ignore (if any), pick the license type you wish to use, and then create the repo.
+
+Fork a repo:
+
+A fork will copy a repo to your own Github account. You might want to do this if you want to modify or use the code from the repo.
+
+1. find the repo you would like to fork
+2. hit the fork button in the top right, and select your profile to fork to your profile
+
+To clone a repo:
+
+you can clone a Github repo to you local machine with clone command from the terminal. You may want to do this if you want to edit or view a repo on your local machine.
+
+1. copy the HTTPS clone url from the Github repo page.
+2. navigate to the folder you would like to clone the repo to in the terminal.
+3. use the command "git clone urlname"
+4. enter your Github username and password if you haven't already.
+
+======
+
+I didn't really have much difficulty setting up git and github. but I had/still have a lot of difficulty understanding Git, Github, and version control. I think I have somewhat of grasp on the basic idea, but I will need a lot more practice in order to really get it down. I had lot of difficulty with git especially. I felt like I was getting sucked in to the git tutorial and it was taking too much time. I had fun with it, but felt a little confused, and was concerned that I was putting to much attention to just one corner of the whole thing.
