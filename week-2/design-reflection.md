@@ -1,4 +1,4 @@
-![the site map](/imgs/site-map.png?raw=true)
+![the site map] (/week-2/imgs/site-map.png?raw=true)
 
 What are the 6 Phases of Web Design?
 What is your site's primary goal or purpose? What kind of content will your site feature?
