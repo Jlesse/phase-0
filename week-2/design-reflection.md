@@ -10,27 +10,27 @@ Which parts of the challenge did you find tedious?
 
 The 6 phases of web design are
 
-1. Information Gathering
+(1) Information Gathering
 
 think about what the purpose of the site is (i.e sell a product, promote, etc.). Talk to the client about their needs. Establish what you would like to accomplish by creating the site. Establish the target audience. Decide what kind of content the site will host, what will you target audience be looking for.
 
-2. Planning
+(2) Planning
 
 Create a site map. Decide what technologies should be implemented.
 
-3. Design
+(3) Design
 
 determine the look and feel of the site. Create one or more prototypes and wire frames. communicate with the client about the look and feel.
 
-4. Development
+(4) Development
 
 Create the website itself, incorporate elements from the prototype. Add HTML and CSS etc...
 
-5. Testing and Delivery
+(5) Testing and Delivery
 
 Make sure the site works! Check all link, buttons, etc. make sure the site validate and meets current web standards. Deliver site with FTP to server.
 
-6. Maintenance
+(6) Maintenance
 
 updates and improvements. You can provide access to update and improve some aspects to client with a CMS.
 
