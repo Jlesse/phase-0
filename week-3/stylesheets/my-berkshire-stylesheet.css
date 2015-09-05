@@ -92,20 +92,52 @@ a:visited {
 	}
 }
 
-/*
-What is important to know when linking an external file (like a style sheet) to an HTML file?
-What tricks did you use to help you with positioning? How hard was it to get the site as you wanted it?
-What CSS did you use to modify the element style (like size, color, etc.)
-Did you modify the HTML to include classes or ids? If so, which did you chose and why? If you didn't, how would you know which one to add to your HTML?
-When you compared your site to the actual code base, which do you think had cleaner code that followed best practices and why?
+/* What is important to know when linking an external file (like a
+style sheet) to an HTML file? What tricks did you use to help you with
+positioning? How hard was it to get the site as you wanted it? What
+CSS did you use to modify the element style (like size, color, etc.)
+Did you modify the HTML to include classes or ids? If so, which did
+you chose and why? If you didn't, how would you know which one to add
+to your HTML? When you compared your site to the actual code base,
+which do you think had cleaner code that followed best practices and
+why?
 
-To link to external style sheet you must know the URL of the style sheet. In other words, you must know the path to the CSS, either relative from the HTML document, or absolute from the root.
+To link to external style sheet you must know the URL of the style
+sheet. In other words, you must know the path to the CSS, either
+relative from the HTML document, or absolute from the root.
 
-We had a lot of difficulty positioning. This challenge actually took us somewhere in the ballpark of 4 hours. Our main issue was positioning the footer so that it didn't overlap with the lists when the window was resized. We struggled for a long time with this, and agreed to meet up again and work some of it out ourselves in the mean time. I talked to Katy Duncan about it during her office hours that night, and she recommended we look into responsive web design. This was key realization. There were just to many CSS conflicts happening on the page when the window was resized so we had to use "@media screen and (max-width: ___)", when the body of the page reached a certain size in order to change the CSS properties.Fortunately, David had experience with this from doing the stretch challenge last week, and when we met up again we incorporate responsiveness. When the width of the body reached the breaking point, we changed footer to relative positioning, and expanded the section in order to push the footer down, and give more room for the list to display.
+We had a lot of difficulty positioning. This challenge actually took
+us somewhere in the ballpark of 4 hours. Our main issue was
+positioning the footer so that it didn't overlap with the lists when
+the window was resized. We struggled for a long time with this, and
+agreed to meet up again and work some of it out ourselves in the mean
+time. I talked to Katy Duncan about it during her office hours that
+night, and she recommended we look into responsive web design. This
+was key realization. There were just to many CSS conflicts happening
+on the page when the window was resized so we had to use "@media
+screen and (max-width: ___)", when the body of the page reached a
+certain size in order to change the CSS properties.Fortunately, David
+had experience with this from doing the stretch challenge last week,
+and when we met up again we incorporate responsiveness. When the width
+of the body reached the breaking point, we changed footer to relative
+positioning, and expanded the section in order to push the footer
+down, and give more room for the list to display.
 
-We used hight and width to modify the size of container elements, typically with a percentage or em value. We used font-size to change the font size. We used color to modify text color.
+We used hight and width to modify the size of container elements,
+typically with a percentage or em value. We used font-size to change
+the font size. We used color to modify text color.
 
-We used a lot of element selectors and some classes, but no id's. There wasn't really much of a need to use Id's since we were not using any javascript. We used selectors to sort of set the parent values, which the child elements inherited, then override the attribute in the child if needed.
+We used a lot of element selectors and some classes, but no id's.
+There wasn't really much of a need to use Id's since we were not using
+any javascript. We used selectors to sort of set the parent values,
+which the child elements inherited, then override the attribute in the
+child if needed.
 
-when we compared our code with the code on the site, we noticed that all of the styling on their site was done in-line. That is a bad practice. They also used a table to set up their list, and put each list element inside a table data. We thought that was kind of strange. Despite it being difficult for us to complete the challenge, I think our code is cleaner and uses better practices. We used external style sheets, we used HTML5 semantics where possible, and I think we have just in general, cleaner and more readable code.
-*/
+when we compared our code with the code on the site, we noticed that
+all of the styling on their site was done in-line. That is a bad
+practice. They also used a table to set up their list, and put each
+list element inside a table data. We thought that was kind of strange.
+Despite it being difficult for us to complete the challenge, I think
+our code is cleaner and uses better practices. We used external style
+sheets, we used HTML5 semantics where possible, and I think we have
+just in general, cleaner and more readable code. */
