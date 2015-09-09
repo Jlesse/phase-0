@@ -60,4 +60,10 @@ I didn't think the material was very confusing. This is mostly a
 refresher for so I found myself looking up syntax a lot, but the
 concepts are all there.
 
+Here are the links to my other programs from 4.3
+
+https://github.com/Jlesse/phase-0/blob/master/week-4/math/my_solution.rb
+
+https://github.com/Jlesse/phase-0/blob/master/week-4/adress/my_solution.rb
+
 =end
