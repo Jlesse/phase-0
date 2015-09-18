@@ -1,18 +1,12 @@
 ## Calculate the mode Pairing Challenge
 
-# I worked on this challenge [with Julian ]
+# I worked on this challenge with Farman Pirzada
 
-# I spent [] hours on this challenge.
+# I spent 1.75 hours on this challenge.
 
 # Complete each step below according to the challenge directions and
 # include it in this file. Also make sure everything that isn't code
 # is commented.
-
-
-
-#array.max_by { |i| array.count(i)>1 }
-
-
 
 # 0. Pseudocode
 
@@ -36,11 +30,6 @@
     #cur_max = count
   #create an array that equals all values that match the key of cur_max
   #RETURN the element(s) that occur the most
-
-
-#adding to a hash
-#hash = {:item1 => 1}
-#hash[:item2] = 2
 
 
 # 1. Initial Solution
