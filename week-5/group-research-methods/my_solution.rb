@@ -34,11 +34,27 @@ puts my_hash_finding_method(my_family_pets_ages, 3)
 
 # Identify and describe the Ruby method(s) you implemented.
 =begin
-In my_array_finding_method I used the Array method each, which iterates through the entire array and allowes access to each element at each index. I used the Fixnum method to_s which converts a fixnum to a string. I used the boolean string method inlude? which tests if the string contains the substring provide as an argument, and returns true if it does. I used the array method push, which pushes the argument into the end of the array.
+In my_array_finding_method I used the Array method each, which iterates
+through the entire array and allows access to each element at each
+index. I used the Fixnum method to_s which converts a Fixnum to a
+string. I used the boolean string method inlude? which tests if the
+string contains the substring provide as an argument, and returns true
+if it does. I used the array method push, which pushes the argument
+into the end of the array.
 
-In my_hash_finding_method the hash method each_pair, which iterates through the hash and allows access to each key value pair. I used the Array method push again to push the name into the array.
+In my_hash_finding_method the hash method each_pair, which iterates
+through the hash and allows access to each key value pair. I used the
+Array method push again to push the name into the array.
 
 =end
+
+# Release 3: Reflect! What did you learn about researching and
+# explaining your research to others?
+# I learned about the include? method and the each_pair method. They are both
+# really useful. I also practiced using driver code which is really helpful for
+# testing.
+
+
 # # Person 2
 # def my_array_modification_method!(source, thing_to_modify)
 #   source.dup # This line is here to make sure all tests initially fail. Delete it when you begin coding.
@@ -106,9 +122,3 @@ In my_hash_finding_method the hash method each_pair, which iterates through the 
 #
 
 
-# Release 3: Reflect!
-# What did you learn about researching and explaining your research to others?
-#
-#
-#
-#
