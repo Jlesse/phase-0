@@ -97,25 +97,45 @@ update_quant("Ice Cream", 1, list)
 update_quant("blob", 1000, list)
 print_list(list)
 
-=begin
-REFLECTION
-#############
-What did you learn about pseudocode from working on this challenge?
-What are the tradeoffs of using Arrays and Hashes for this challenge?
-What does a method return?
-What kind of things can you pass into methods as arguments?
-How can you pass information between methods?
-What concepts were solidified in this challenge, and what concepts are still confusing?
+=begin REFLECTION ############# What did you learn about pseudocode
+from working on this challenge? What are the tradeoffs of using Arrays
+and Hashes for this challenge? What does a method return? What kind of
+things can you pass into methods as arguments? How can you pass
+information between methods? What concepts were solidified in this
+challenge, and what concepts are still confusing?
 
-I am not sure that I learned anything new about pseuocoding from this challenge. Unfortunately I accidentally missed the pairing session so I had to do it on my own. I am sure I would have learned a lot more if I had made it to the pairing session.
+I am not sure that I learned anything new about pseuocoding from this
+challenge. Unfortunately I accidentally missed the pairing session so
+I had to do it on my own. I am sure I would have learned a lot more if
+I had made it to the pairing session.
 
-I don't think that arrays would be very good for this challenge unless you had an array of objects that held both the quantity and the item. It is more efficient to access elements in an array, which might be useful you are rapidly accessing and elements, but for this application its not important to consider. If sorted order were highly important, i think an array of objects would be required. Arrays are keyed by index, and so it is hard when you want to correlate and pair based on a programmer defined key. I think a hash is a much better choice for this kind of application because it allows us to make each key a grocery item, and the value the quantity.
+I don't think that arrays would be very good for this challenge unless
+you had an array of objects that held both the quantity and the item.
+It is more efficient to access elements in an array, which might be
+useful you are rapidly accessing and elements, but for this
+application its not important to consider. If sorted order were highly
+important, i think an array of objects would be required. Arrays are
+keyed by index, and so it is hard when you want to correlate and pair
+based on a programmer defined key. I think a hash is a much better
+choice for this kind of application because it allows us to make each
+key a grocery item, and the value the quantity.
 
-A method implicitly returns the last evaluated expression before the the method ended, or explicitly returns the statement after the keyword return. I think explicit returns are better because they are more clear to other people reading your code and less prone to unexpected behavior. Puts and print both output to the console, and they both return nil.p will both output and return the value.
+A method implicitly returns the last evaluated expression before the
+the method ended, or explicitly returns the statement after the
+keyword return. I think explicit returns are better because they are
+more clear to other people reading your code and less prone to
+unexpected behavior. Puts and print both output to the console, and
+they both return nil.p will both output and return the value.
 
-You can pass any object to a method, whether its a string, a new object, an integer, etc. You can pass a method into another method, as long as that method returns something that will fill the requirements for that argument within the method body.
+You can pass any object to a method, whether its a string, a new
+object, an integer, etc. You can pass a method into another method, as
+long as that method returns something that will fill the requirements
+for that argument within the method body.
 
-Methods can communicate with each by passing one method into another method or using an instance variable to hold the state.
+Methods can communicate with each by passing one method into another
+method or using an instance variable to hold the state.
 
-I solidified my understanding of methods and hashes in ruby. I think I've got a decent handle on it. I am still a little confused about all the enum methods, and how and when to best use them. There are a lot, so it can be a little overwhelming.
-=end
+I solidified my understanding of methods and hashes in ruby. I think
+I've got a decent handle on it. I am still a little confused about all
+the enum methods, and how and when to best use them. There are a lot,
+so it can be a little overwhelming. =end
