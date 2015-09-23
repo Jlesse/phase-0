@@ -1,8 +1,29 @@
 #Attr Methods
 
-# I worked on this challenge [by myself, with:]
+# I worked on this challenge myself
 
-# I spent [#] hours on this challenge.
+# I spent 2 hours on this challenge.
+#PSEUDOCODE
+=begin
+Create NameData class
+  write an att_reader
+  define initialize that takes a string, your_name, as a parameter.
+    define and set instance variable name to your_name
+  END method
+END class
+
+Create Greetings class
+  define an initialize method
+    define and assign name_data_obj to a new NameData object that is passed a name.
+  define and set instance variable name to name_data_obj's name.
+  END method
+
+  define a hello method
+    print out a string greeting method that includes the instance variable name
+  end method.
+END class.
+
+=end
 
 class NameData
   attr_reader :name
