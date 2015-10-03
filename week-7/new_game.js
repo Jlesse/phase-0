@@ -137,74 +137,71 @@ end method
 
 // Initial Code
 
-function charactor(name, attack, defense, health, potions){
-  this.name = name;
-  this.attack = attack;
-  this.defense =defense;
-  this.health = health;
-  this.potions = potions
-}
 
-//Charactor objects
-var player = new charactor("Barbarius", 4, 4, 20, 0);
-var goblin = new charactor("Goblin", 0, 2, 8, 1);
-var ogre = new charactor("Ogre", 2, 6, 10, 1);
-var dragon = new charactor("dragon", 5, 8, 15, 1);
-var wizard = new charactor("Wizard", 6, 5, 20, 0);
+document.getElementById("menu").innerHTML = "<p>OPTIONS</p>";
 
-var monster_array = [goblin, ogre, dragon, wizard];
-var cur_dungeon = 0;
-var cur_monster;
-game_done = false;
 
-function intro(){
-  console.log("You approach the castle.");
-  console.log("You loudly exclaim 'I'm comin for you wizard man!'");
-  console.log("A lightning bolt crashes down and cracks the earth as you enter the castle.");
-}
 
-function main_loop(){
-if(game_done == true){
-  return "GAME OVER";
-}
-  //display_monster();
-  var option;
-    var prompt = require('prompt');
-    console.log("OPTIONS");
-    console.log("=========");
-    console.log("1. Use a potion");
-    console.log("2. Go to the next room");
-    console.log("3. Exclaim ' Die you wizard!!!'");
-    console.log("4. Exit game");
+// function charactor(name, attack, defense, health, potions){
+//   this.name = name;
+//   this.attack = attack;
+//   this.defense =defense;
+//   this.health = health;
+//   this.potions = potions
+// }
 
-      prompt.get(['option'], function(err, result){
-        option = result.option;
-        console.log("option is: " + option);
-        callback()
-      });
+// //Charactor objects
+// var player = new charactor("Barbarius", 4, 4, 20, 0);
+// var goblin = new charactor("Goblin", 0, 2, 8, 1);
+// var ogre = new charactor("Ogre", 2, 6, 10, 1);
+// var dragon = new charactor("dragon", 5, 8, 15, 1);
+// var wizard = new charactor("Wizard", 6, 5, 20, 0);
 
-    function callback(){
-      switch (option){
-        case 1:
-         //use_potion();
-          break;
-        case 2:
-          //battle();
-          break;
-        case 3:
-          console.log(" Die you wizard!!!");
-          break;
-        case 4:
-          game_done = true;
-          break;
-        defualt:
-           "Not a valid option! Use your head Barbarian!"
-      }
-      main_loop();
-    }
-}
+// var monster_array = [goblin, ogre, dragon, wizard];
+// var cur_dungeon = 0;
+// var cur_monster;
+// game_done = false;
 
-main_loop();
+// // function intro(){
+// //   document.writeln("You approach the castle.","You loudly exclaim 'I'm comin for you wizard man!'","A lightning bolt crashes down and cracks the earth as you enter the castle.");
+// // }
+
+
+// function main_loop(){
+// if(game_done == true){
+//   return "GAME OVER";
+// }
+//   //display_monster();
+//   var option;
+//     document.getElementById('menu').innerHTML = "<p>OPTIONS</p>";
+
+//     document.writeln("<p>=========</p>");
+//     console.log("<p>1. Use a potion");
+//     console.log("2. Go to the next room");
+//     console.log("3. Exclaim ' Die you wizard!!!'");
+//     console.log("4. Exit game");
+
+//       switch (option){
+//         case 1:
+//          //use_potion();
+//           break;
+//         case 2:
+//           //battle();
+//           break;
+//         case 3:
+//           console.log(" Die you wizard!!!");
+//           break;
+//         case 4:
+//           game_done = true;
+//           break;
+//         defualt:
+//            "Not a valid option! Use your head Barbarian!"
+//       }
+
+
+// }
+// main_loop();
+//main_loop();
 
 
 
