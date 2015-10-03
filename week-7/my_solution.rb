@@ -87,27 +87,41 @@ print_all_states
 # alaska.virus_effects
 
 
-#=======================================================================
-# Reflection Section
+#=====================================================================
+== # Reflection Section
 =begin
-What are the differences between the two different hash syntaxes shown in the state_data file?
+What are the differences between the xtwo different hash syntaxes shown in the state_data file?
 
-The Syntax of the outer hash uses string as keys and uses the hash rocket to point to its value. The inner hashes use symbols as keys, and use the symbal notation with colons.
+The Syntax of the outer hash uses string as keys and uses the hash
+rocket to point to its value. The inner hashes use symbols as keys,
+and use the symbal notation with colons.
 
 What does require_relative do? How is it different from require?
 
-  both require an require relative allow you to access and use code from an outside file. Require relative allows you to specify the path to file relatively from the current directory where the file is begin executed. Require is used when you want to specify the absolute path to the file.
+  both require an require relative allow you to access and use code
+  from an outside file. Require relative allows you to specify the
+  path to file relatively from the current directory where the file is
+  begin executed. Require is used when you want to specify the
+  absolute path to the file.
 
 What are some ways to iterate through a hash?
 
-  You can iterate through a hash using .each, .each_key, .map. They will all give access to each pair and allow you tom manipulate the elements.
+  You can iterate through a hash using .each, .each_key, .map. They
+  will all give access to each pair and allow you tom manipulate the
+  elements.
 
-When refactoring virus_effects, what stood out to you about the variables, if anything?
+When refactoring virus_effects, what stood out to you about the
+variables, if anything?
 
-All the variables were instacne variables. It was easily refactored just by deleting all of the paramaters, and change the method signatrues for the effected methods.
+All the variables were instacne variables. It was easily refactored
+just by deleting all of the paramaters, and change the method
+signatrues for the effected methods.
 
 What concept did you most solidify in this challenge?
 
-I think I really solidified my understanding of refactoring and using hashes. I refactored the code to be more dry, and I learned about what things to look for when refactoring, such as what data stuctures are being used, and the scope of variables.
+I think I really solidified my understanding of refactoring and using
+hashes. I refactored the code to be more dry, and I learned about what
+things to look for when refactoring, such as what data stuctures are
+being used, and the scope of variables.
 
 =end
