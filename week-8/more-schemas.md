@@ -6,7 +6,7 @@ This is a one-to-one relationship because each dog in the dogs table can only be
 
 release 4:
 
-![many-to-many](./imgs/one-to-one.png)
+![many-to-many](./imgs/many-to-many.png)
 
 REFLECTION: What is a one-to-one database?
 
