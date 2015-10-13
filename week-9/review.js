@@ -46,6 +46,86 @@ end function
 
 //INITIAL SOLUTION
 
+// var groceryList = [];
+
+// function listEntry(itemName, quantity){
+//   this.itemName = itemName;
+//   this.quantity = quantity;
+// }
+
+// function addToList(itemName, quantity){
+//   var found = false
+//   for (var i = 0; i <= groceryList.length - 1; i++) {
+//     if (groceryList[i].itemName === itemName){
+//       console.log("item already in list");
+//       found = true;
+//     }
+//   }
+//   if (found === false) {
+//     var entry = new listEntry(itemName, quantity);
+//     groceryList.push(entry);
+//   }
+// }
+
+// function remove(itemName){
+//   var found = false
+//   for (var i = 0; i <= groceryList.length - 1; i++) {
+//     if (groceryList[i].itemName === itemName){
+//       if (i === groceryList.length - 1) {
+//         groceryList.pop();
+//       }
+//       else{
+//         groceryList[i] = groceryList.pop();
+//       }
+//       found = true;
+//       break;
+//     }
+//   }
+//   if(found === false){
+//     console.log("item not found");
+//   }
+// }
+
+// function updateQuantity(itemName, quantity){
+//   var found = false;
+//   for (var i = 0; i <= groceryList.length - 1; i++) {
+//     if (groceryList[i].itemName === itemName){
+//       groceryList[i].quantity = quantity;
+//       found = true;
+//       break;
+//     }
+//   }
+//   if(found === false){
+//     console.log("Item not found");
+//   }
+// }
+
+// function printList(){
+//   for (var i = 0; i < groceryList.length; i++) {
+//     console.log("ITEM: " + groceryList[i].itemName + " QUANTITY: " + groceryList[i].quantity);
+//   }
+// }
+
+// addToList("beans", 3);
+// console.log(groceryList[0]);
+// updateQuantity("beans", 1);
+// console.log(groceryList[0]);
+// addToList("beans", 5);
+// updateQuantity("bla", 2);
+// console.log(groceryList[1]);
+// addToList("apples", 5);
+// addToList("salt", 1);
+// addToList("pepper", 2);
+// printList();
+// console.log("///////////");
+// remove("salt");
+// printList();
+// console.log("///////////");
+// remove("beans");
+// printList();
+
+//REFACTORED
+
 var groceryList = [];
 
 function listEntry(itemName, quantity){
@@ -53,40 +133,100 @@ function listEntry(itemName, quantity){
   this.quantity = quantity;
 }
 
+function find(itemName){
+  for (var i = 0; i < groceryList.length; i++) {
+    if (groceryList[i].itemName === itemName){
+      return i;
+    }
+  }
+  return -1;
+}
+
 function addToList(itemName, quantity){
-  var entry = new listEntry(itemName, quantity);
-  groceryList.push(entry);
+  var entryIndex = find(itemName);
+    if (entryIndex > -1){
+      console.log("item already in list");
+      found = true;
+    }
+    else{
+      var entry = new listEntry(itemName, quantity);
+      groceryList.push(entry);
+      console.log("added " + itemName);
+  }
 }
 
 function remove(itemName){
-  var found = false
-  for (var i = 0; i <= groceryList.length - 1; i++) {
-    if (groceryList[i].itemName === itemName){
-      if (i = groceryList.length -1) {
+  var entryIndex = find(itemName);
+      if (entryIndex === groceryList.length - 1) {
         groceryList.pop();
+        console.log("removed " + itemName);
+      }
+      else if(entryIndex === -1){
+        console.log("item not found");
       }
       else{
-        groceryList[i] = groceryList.pop();
+        groceryList[entryIndex] = groceryList.pop();
+        console.log("removed " + itemName);
       }
-      found = true;
-      break;
-    }
-  }
-  if(found = false){
-    console.log("item not found");
-  }
 }
 
 function updateQuantity(itemName, quantity){
-  var found = false;
-  for (var i = 0; i <= groceryList.length - 1; i++) {
-    if (groceryList[i].itemName === itemName){
-      groceryList[i].quantity = quantity;
-      found = true;
-      break;
+  var entryIndex = find(itemName);
+    if(entryIndex > -1){
+      groceryList[entryIndex].quantity = quantity;
+      console.log("updated the quantity of " + itemName + " to " + quantity);
     }
-  }
-  if(found = false){
+    else {
     console.log("Item not found");
   }
 }
+
+function printList(){
+  console.log("GROCERY LIST")
+  console.log("============")
+  for (var i = 0; i < groceryList.length; i++) {
+    console.log("ITEM: " + groceryList[i].itemName + " QUANTITY: " + groceryList[i].quantity);
+  }
+}
+
+//DRIVER TESTS
+addToList("beans", 3);
+console.log(groceryList[0]);
+updateQuantity("beans", 1);
+console.log(groceryList[0]);
+addToList("beans", 5);
+updateQuantity("bla", 2);
+console.log(groceryList[1]);
+addToList("apples", 5);
+addToList("salt", 1);
+addToList("pepper", 2);
+printList();
+remove("pepper");
+remove("pepper")
+printList();
+remove("beans");
+printList();
+
+/* REFLECTION
+
+What concepts did you solidify in working on this challenge?
+(reviewing the passing of information, objects, constructors, etc.)
+
+I solidified my understanding of using prototypes and objects in
+JavaScript. I practiced CRUD, by creating a program incorporating
+those features. I practiced modifying and passing information through
+a program and using utility functions.
+
+What was the most difficult part of this challenge? Did an array or
+object make more sense to use and why?
+
+I used an array of objects though it could have been done many ways.
+I thought it made sense because an array made it easy to search
+through and add and remove from the list. I used objects as the
+elements in the array because each entry in the grocery list possessed
+a name and a quantity, so I though it made sense to create an object
+with these properties. I suppose the whole thing could have been
+wrapped into an object instead of getting calling the functions statically
+but I didn't really see the purpose in that.
+
+*/
